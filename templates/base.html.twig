@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}株式会社AKIRAM{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('build/styles/app.css') }}"/>
+            <link rel="stylesheet" href="{{ asset('build/styles/effect.css') }}"/>
+
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet"> <!-- nico moji !-->
+            <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet"> <!-- M PLUS Rounded 1c !-->
+                                                                                                     <!-- Bootstrap --->
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Font Awesome-->
+            <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+        {% endblock %}
+
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}
+
+            <!-- 参考サイト: bhttps://coco-factory.jp/ugokuweb/move02/5-5/ -->
+            <!-- 動きのある背景 (以下) のライブラリ -->
+            {{ encore_entry_script_tags('javascript/particles.min') }}
+            <!-- Memo: このままだとエラーがあるのでcallee関数をコメントアウト。記事: https://devsakaso.com/javascript-particles-js/ -->
+
+            <!-- 幾何学 背景 js -->
+            {{ encore_entry_script_tags('javascript/geometry_effect') }}
+
+        {% endblock %}
+    </body>
+</html>

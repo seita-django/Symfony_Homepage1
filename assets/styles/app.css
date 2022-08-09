@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***********************************
+*           大見出しセクション  　     *
+***********************************/
+
+/******** 曲線 デザイン　************/
+.curved svg {
+    display          : block;     /* ブロック */
+}
+
+/********* 曲線の背景色 *************/
+.curved.upper {
+    background       : #F7F7F7;   /* 背景: 色を反転させる */
+}
+
+/************ 大見出し画面 *********/
+.curved {
+    background       : #099fff;  /* 背景 */
+    color            : white;    /* 文字色 */
+    text-align       : left;     /* テキスト位置 */
+}
+
+/*********** 大見出し h1 ***********/
+.curved h1 {
+    font-size        : 2.5rem;    /* フォントサイズ */
+    font-family      : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* フォントファミリー */
+    margin-left      : 30px;      /* 左余白 */
+}
+
+/********** 大見出し p *************/
+.curved p {
+    font-size        : 1.5rem;  /* フォントサイズ */
+    font-family      : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* フォントファミリー */
+    margin           : 0 5rem 0 5rem; /* マージン */
+}
+
+/*********** メニューバー **********/
+.list-menu {
+    margin-bottom    : 50px;    /* 上余白 */
+    margin-right     : 15px;    /* 右余白 */
+}
+
+/********** 会社ロゴ ***************/
+.logo{
+    /* float: left;によって<logo>要素と<list-menu>要素が横並びになる */
+    margin           :10px 0 0 30px;
+    float            :left;
+}
+
+/********* 会社ロゴ イメージ ********/
+.logo img{
+    width            :50px;     /* ロゴのサイズ */
+}
+
+/********* メニューバー リスト ******/
+ul.list {
+    display          : flex;
+    justify-content  : flex-end;/* liのメニューを右に寄せる */
+    list-style       : none;
+}
+
+/******** メニューバー 各要素 *******/
+li {
+    padding          : 0 0px;            /* liの中の高さとか、間の調整 */
+    margin           : 10px;             /* 余白 */
+    border-bottom    : solid 2px white;  /* 余白 */
+    text-decoration: none;               /* リンク下線 削除 */
+}
+
+/******** イラスト イメージ ********/
+.illustration img {
+    width            : 500px;            /* ロゴの幅 */
+    height           : auto;             /* ロゴの高さ */
+    text-align: center;                  /* 真ん中に配置 */
+}
+
+/******************************
+*      会社概要 セクション       *
+******************************/
+
+/******* 会社概要 コラム　*******/
+.column {
+    height           : auto;            /* 会社概要セクションの高さ -> auto */
+    width            : 100%;            /* 横幅 */
+    margin-bottom    : 70px;            /* セクション下に70pxの余白 */
+}
+
+/********** コラム 右　*********/
+.right {
+    /* テスト用 */
+    /* background-size: cover; */
+}
+
+/********** コラム 左　*********/
+.left img{
+    /* テスト用 */
+    /* background-size: cover; */
+    text-align      : center;          /* 写真を真ん中に配置 */
+}
+
+/******** 右コラムの内容 ********/
+.info {
+    margin-right    : 100px;           /* 右余白100px空ける */
+}
+
+/******** AKIRAMとは **********/
+.info h1 {
+    border-bottom    : solid 2px #808080;  /* 薄い黒色の下線*/
+    margin-bottom    : 20px;               /* 下に20pxの余白 */
+}
+
+/******** AKIRAMは.. **********/
+.info h4 {
+    line-height      : 1.7;                /* 行間1.7 */
+    color            : #808080;            /* 優しい黒色 */
+}
+
+/******** レスポンシブ **********/
+@media all and (min-width: 500px) {        /* 500px以上の時 */
+    .wrapper {
+        display      : flex;               /* 要素を横並べ */
+    }
+}
+
+/******************************
+*     サービス 1 セクション      *
+******************************/
+
+/****** サービスタイトル ********/
+#service_title {
+    margin           : 0 200px 0 200px;    /* 左右200px 余白 */
+}
+
+/********* サービス ***********/
+#service_title h1 {
+    text-align       : center;             /* 真ん中に配置 */
+    color            : black;              /* 文字色 */
+    border-bottom    : solid 2px #808080;  /* 薄い黒色の下線 */
+}
+
+/****** 料金プランを... ********/
+#service_title h3 {
+    text-align       : center;             /* 真ん中に配置 */
+    color            : #808080;            /* 薄い黒い色 */
+}
+
+/****** サービステーブル ********/
+.service_table{
+    margin           : 40px 120px 40px 120px;  /* 左右120px, 上下40px */
+}
+
+/******* サービスカード *********/
+.service_cards{
+    margin           : 20px 70px 20px 70px;    /* 左右70px, 上下20px 余白 */
+    display          : flex;                   /* 横並べ */
+    text-align       : center;                 /* 真ん中に配置 */
+}
+
+/****** それぞれのカード ********/
+.each_box{
+    width            : 50%;                    /* 幅50% */
+    height           : auto;                   /* カードの高さオート */
+    margin           :10px 20px 20px 20px;     /* 上10px, 左右下20px 余白 */
+    border           :2px solid #808080;       /* 薄い黒色の下線 */
+    background-color : white;                  /* 白色の縁 */
+}
+
+/***** カード内 タイトル ********/
+.each_box h3{
+    color           : #808080;                 /* 薄い黒色 */
+    text-align      : left;                    /* 配置右 */
+}
+
+/*** カード hover時エフェクト ***/
+.each_box:hover{
+    transform       : scale(1.05, 1.05);       /* 肥大 */
+}
+
+/****** グラデーション背景 ******/
+.gradation {
+    height          : auto;                    /* グラデーション高さオート */
+    border          : 1px solid #808080;       /* 薄い黒色の縁 */
+    text-align      : center;                  /* 真ん中に配置 */
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    /* グラデーションジェネレーター: https://webkul.github.io/coolhue/ */
+}
+
+/****** グラデーション h3 ******/
+.gradation h3{
+    color          : white;
+    text-align     : center;
+    margin         : 30px 0 30px 0;
+}
+
+/****** アウトライン (新規に制作したい...etc ******/
+.outline {
+    padding        : 0 10px 0 10px;  /* 左右10px 内側余白 */
+    text-align     : left;           /* 左配置 */
+}
+
+/********* 矢印の下線 ********/
+/* 参照: https://qiita.com/kokogento/items/038426acdc947116f4d4 */
+.lineArrow {
+    width          : 100%;
+    height         : 15px;
+    border-bottom  : 1px solid #808080;
+    border-right   : 1px solid #808080;
+    transform      : skew(45deg);           /* 傾きを調節 */
+    /*下線矢印をテキストに合わせてうまい具合にはめる*/
+    margin         : -10px 0px 0px -10px;
+}
+
+/******************************
+*    アローフロー セクション     *
+******************************/
+/******* アローフローの大枠 ******/
+#arrows_section {
+    text-align    : center;    /* 真ん中に配置 */
+    margin-bottom : 100px;     /* 下に100pxの余白 */
+}
+
+/********* 導入の流れ.. ********/
+#arrows_section h3{
+    text-align    : center;   /* 真ん中に配置 */
+}
+
+/********* 以下参照 ***********/
+/* 参考: https://codepen.io/J5N/pen/XPEbgB */
+.clearfix:after {
+    clear         : both;
+    content       : "";
+    display       : block;
+    height        : 0;
+}
+
+.arrow-steps {
+    display       : flex;
+    flex-flow     : row nowrap;
+}
+
+.description-steps {
+    display      : flex;
+    flex-flow    : row nowrap;
+}
+
+.arrow-steps div {
+    position     : relative;
+    margin-right : 10px;
+    width        : 350px;
+    height       : 60px;
+    /* background-color: #6e6e6e; */
+    /* background-color: black; */
+    color        : white;
+    text-align   : center;
+}
+
+.description-steps div {
+
+    position     : relative;
+    margin-right : 10px;
+    width        : 350px;
+    height       : 150px;
+    background-color: #F7F7F7;
+    color        : #808080;
+    text-align   : center;
+    display      : flex;
+    padding      : 7px 7px 7px 7px;
+}
+
+
+.step {
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    padding-left     : 10px;
+}
+
+.container {
+    font-size        : 14px;
+    font-weight      : 600;
+    text-align       : center;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+    position         : absolute;
+    top              : 0;
+    content          : " ";
+    border-style     : solid;
+    border-width     : 30px 0 30px 10px;
+    border-color     : transparent transparent transparent black;
+}
+.arrow-steps .step:before {
+    left: 0;
+    border-color     : transparent transparent transparent white;
+}
+.arrow-steps .step:after {
+    transform        : translateX(100%);
+    right            : 0;
+    border-left-color: inherit;
+}
+
+/******** 概要ボックス *********/
+.description-box {
+    border           : 1px solid #808080;
+    width            : 350px;
+    height           : 800px;
+    background-color : white;
+    box-shadow       : 10px 10px 15px -10px;     /* 陰をつける */
+    /* 参照: https://saruwakakun.com/html-css/basic/box-shadow */
+}
+
+/******** 概要ボックス (テレビ会議の...) *********/
+.description-box h4 {
+    line-height      : 1.5;    /* 行間1.5 */
+}
+
+/***********************************
+*        サービス2 セクション  　     *
+***********************************/
+/********** キャンペーン大枠 *********/
+#campaign_box {
+    position         : relative;          /* 相対的配置 */
+    top              : 25%;               /* 上25%に配置 */
+    /* border: 1px solid white; */
+    margin           : 0px 130px 0 130px;
+}
+
+/******* 導入キャンペーン... ********/
+#campaign_box h3 {
+    color            : white;
+    text-align       : center;
+}
+
+/*********** 0円... **************/
+#campaign_box h1{
+    font-size       : 80px;
+    color           : white;
+    text-align      : center;
+    margin          : 10px 10px 10px 10px;
+}
+
+/******** まずはお試し... **********/
+#campaign_box h2 {
+    color           : white;
+    font-size       : 50px;
+    text-align      : left;
+    margin          : 10px 10px 10px 10px;
+}
+
+/********* 横並びコンテンツ *********/
+#flex_contents {
+    display         : flex;          /* 横並び */
+}
+
+/********* 特典1,2,3 *************/
+#Tokuten h3 {
+    position        : relative;      /* 相対的配置 */
+    background      : #f1f8ff;
+    padding         : 0.25em 0.5em;
+    border-left     : solid 2em #5c9ee7;
+    color           : #808080;
+    margin-left     : 70px;
+    margin-right    : 70px;
+    height          : 40px;
+}
+
+/********* 以下参照 **************/
+/* 参照：https://saruwakakun.com/html-css/reference/h-design */
+#Tokuten h3:before {
+    font-family　　　: "Font Awesome 5 Free";
+    content         : "\f135";    /* アイコン */
+    position        : absolute;   /* 絶対的配置 */
+    padding         : 0em;
+    color           : white;
+    font-weight     : 900;
+    left            : -1.35em;
+    top             : 50%;
+    -webkit-transform: translateY(-50%);
+    transform       : translateY(-50%);
+}
+
+/***********************************
+*           質問セクション  　     *
+***********************************/
+/************** 以下参照 ****************/
+/****  参照：https://copypet.jp/963/ ****/
+
+#Question_Section {
+    margin             : 30px 200px 30px 200px;
+}
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+    -webkit-box-sizing : border-box;
+    box-sizing         : border-box;
+}
+.cp_qa {
+    overflow-x         : hidden;
+    margin             : 0 auto;
+    color              : #333333;
+}
+.cp_qa .cp_actab {
+    padding            : 20px 0;
+    border-bottom      : 1px dotted #cccccc;
+}
+.cp_qa label {
+    font-size          : 1.2em;
+    position           : relative;
+    display            : block;
+    width              : 100%;
+    margin             : 0;
+    padding            : 10px 10px 0 48px;
+    cursor             : pointer;
+}
+.cp_qa .cp_actab-content {
+    font-size          : 1em;
+    position           : relative;
+    overflow           : hidden;
+    height             : 0;
+    margin             : 0 40px;
+    padding            : 0 14px;
+    -webkit-transition : 0.4s ease;
+    transition         : 0.4s ease;
+    opacity            : 0;
+}
+.cp_qa .cp_actab input[type=checkbox]:checked ~ .cp_actab-content {
+    height             : auto;
+    padding            : 14px;
+    opacity            : 1;
+}
+.cp_qa .cp_plus {
+    font-size          : 2.4em;
+    line-height        : 100%;
+    position           : absolute;
+    z-index            : 5;
+    margin             : 3px 0 0 10px;
+    -webkit-transition : 0.2s ease;
+    transition         : 0.2s ease;
+}
+.cp_qa .cp_actab input[type=checkbox]:checked ~ .cp_plus {
+    -webkit-transform  : rotate(45deg);
+    transform          : rotate(45deg);
+}
+.cp_qa .cp_actab input[type=checkbox] {
+    display            : none;
+}
+
+/***********************************
+*              フッター       　     *
+***********************************/
+/*****　デザイン参考ウェブサイト　******/
+footer p {
+    text-align             : center;
+}
