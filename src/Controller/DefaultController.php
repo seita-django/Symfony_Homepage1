@@ -16,15 +16,22 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBag;
 
 use Symfony\Component\HttpFoundation\Request; /* リクエスト */
-use App\Entity\ContactForm; /* データベース */
+use App\Entity\ContactDB1; /* データベース */
 
 /* Mailer */
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Mailer\MailerInterface;
 
 
+/**
+ *
+ * デフォルトのControllerクラス
+ */
 class DefaultController extends AbstractController
 {
+    /**
+     * @return render('home/index.html.twig')
+     */
     #[Route('/home', name: 'app_default')]
     public function index(): Response
     {
@@ -33,11 +40,22 @@ class DefaultController extends AbstractController
         ]);
     }
 
+    /**
+     * お問い合わせページ データベース処理
+     *
+     * @link https://symfony.com/doc/current/mailer.html mailer参照
+     *
+     * @param \ManagerRegistry $doctrine
+     * @param \MailerInterface $mailer
+     *
+     * @return render('home/result.html.twig')  もしメールが送信された場合
+     * @return render('home/contact_us.html.twig') 通常時
+     */
     /* お問い合せページ */
     #[Route('/contact_us', name: 'app_contact')]
     public function createAction(Request $request, ManagerRegistry $doctrine, MailerInterface $mailer)
     {
-        $contact = new ContactForm; /* DBオブジェクトのインスタンス化 */
+        $contact = new ContactDB1(); /* DBオブジェクトのインスタンス化 */
         # フォームのフィールドを追加
         $form = $this->createFormBuilder($contact)
             ->add('name', TextType::class, array('label' => 'name', 'attr' => array('class' => 'form-control', 'style' => 'margin-bottom:15px')))
@@ -67,7 +85,7 @@ class DefaultController extends AbstractController
             // $em = $this->getDoctrine()->getManager();
             $em = $doctrine->getManager();
             $em->persist($contact);
-            // $em->flush();   // DBに保存
+            $em->flush();   // DBに保存
 
             $message = (new Email())                          // Swift_Message()から変更
             ->from('seita99615@gmail.com')         // 自分(会社の公式)のメールアドレス
