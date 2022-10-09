@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}株式会社AKIRAM{% endblock %}
+{% block title %}Company XXX{% endblock %}
 
 {% block body %}
 
@@ -20,40 +20,39 @@
 <body>
 
     <!-------------------------
-            大見出し画面
+            Main Page
     -------------------------->
 
     <div class="curved">
-        <!-- 会社ロゴ --->
+        <!-- company logo --->
         <div class="logo">
             　<img src="{{ asset('build/images/会社ロゴ.7f38bf22.jpg') }}" alt="Error">
             <h2>AKIRAM</h2>
         </div>
-        <!-- バーセクション --->
+        <!-- bar section --->
         <div class="list-menu">
             　<ul class="list">
-            　　<li><a href="#jump_companyInfo">企業情報</li>
-            　　<li><a href="#jump_service">サービス</li>
-               <li><a href="{{ path('app_contact') }}">お問い合わせ</a></li>
+            　　<li><a href="#jump_companyInfo">About Us</li>
+            　　<li><a href="#jump_service">Service</li>
+               <li><a href="{{ path('app_contact') }}">Contact Us</a></li>
             　</ul>
         </div> <!--/list-menu -->
 
         <br><br>
-        <!-- 見出し --->
-        <h1>オンライン完結 × ハイクオリティ</h1>
-        <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA <br>
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-        <!-- 曲線 (曲線の生成にはGetWavesを使用 => https://getwaves.io/) !-->
+        <!-- Header --->
+        <h1>Online × High Quality</h1>
+        <p>Bla bla bla bla bla bla bla bla <br>
+        bla bla bla bla bla bla bla bla bla bla bla bla</p>
+        <!-- curve (reference => https://getwaves.io/) !-->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path fill="#fff" fill-opacity="1" d="M0,96L60,106.7C120,117,240,139,360,128C480,117,600,75,720,53.3C840,32,960,32,1080,48C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-        <!-- (Memo: 白色でfillすることによって背景の色が浮き出る仕様)!-->
     </div> <!--/curved -->
 
 
     <!-------------------------
-             会社概要
+             About Us
     -------------------------->
-    <!-- 企業概要に飛ぶリンク --->
+    <!-- link to about us --->
     <a id="jump_companyInfo"></a>
 
     <div class="wrapper">
@@ -64,73 +63,73 @@
       </div> <!--/column left -->
       <div class="column right">
         <div class="info">
-          <h1>AKIRAMとは</h1>
-          <h4>AKIRAM は、豊富な実績と経験により得たノウハウを駆使し、課題を根本から解決することを目標とするWeb制作会社です。
-          Webとグラフィックの融合から、柔軟かつ斬新なプランニングの提案をし続け、コンサルから制作まで一貫した体制をとり、
-          制作実績は大手企業様を中心に400サイト以上と、中部圏トップクラスの多彩な経験を持っています。</h4>
+          <h1>What is XXX</h1>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur deleniti temporibus maxime omnis sunt vitae numquam provident deserunt alias praesentium rerum laborum,
+          animi totam magni perferendis reprehenderit velit, repellat laboriosam!</h4>
         </div> <!--/ info -->
       </div> <!--/ column right -->
     </div> <!--/ wrapper -->
 
     <!-------------------------
-         サービスセクション1
+         Service section1
     -------------------------->
-    <!-- サービスセクションに飛ぶ !-->
+    <!-- link to service section -->
     <a id="jump_service"></a>
-    <!-- タイトル !-->
+    <!-- title !-->
     <div id="service_title">
-        <h1>サービス</h1>
-        <h3>料金プランを明瞭に、様々なお悩み・ご要望に対応します。</h3>
+        <h1>Service</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
     </div> <!--/service_title -->
 
-    <!-- サービスのテーブル !-->
-    <div class="service_table"> <!-- 大枠 !-->
-        <div class="service_cards"> <!-- 3つのボックス !-->
-            <div class="each_box"> <!-- ボックス1 -->
+    <!-- Service Table !-->
+    <div class="service_table"> <!-- Outer box !-->
+        <div class="service_cards"> <!-- 3 cards !-->
+            <div class="each_box"> <!-- box1 -->
                 <div class="gradation">
-                    <h3>ホームページ制作参ります</h3>
+                    <h3>Build homepage</h3>
                 </div>
                     <div class="outline">
-                        <h3>新規に制作したい</h3>
-                        <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                        <h3>リニューアルしたい</h3>
-                        <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                        <h3>売り上げが伸びるサイト</h3>
-                        <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                        <h3>採用が伸びるサイト</h3>
+                        <h3>Build new one</h3>
+                        <div class="lineArrow"></div> <!-- under narrow -->
+                        <h3>Want to renew </h3>
+                        <div class="lineArrow"></div> <!-- under narrow -->
+                        <h3>Increase access</h3>
+                        <div class="lineArrow"></div> <!-- under narrow -->
+                        <h3>Increase hire</h3>
                         <div class="lineArrow"></div> <!-- 下線 矢印 !-->
                         <br><br>
                     </div> <!-- /outline -->
             </div> <!-- /each box -->
-            <div class="each_box"> <!-- ボックス2 -->
+            <div class="each_box"> <!-- box2 -->
                 <div class="gradation">
-                    <h3>ホームページを作ったあと</h3>
+                    <h3>After building homepage</h3>
                 </div>
                 <div class="outline">
-                    <h3>サーバー保守もお任せ</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                    <h3>更新をお願いしたい</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                    <h3>Web広告を出したい</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                    <h3>SEO対策をしたい</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
+                    <h3>Server maintenance</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
+                    <h3>Ask renewing</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
+                    <h3>Have Web Adsense</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
+                    <h3>SEO measures</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
                     <br><br>
                 </div> <!-- /outline -->
             </div> <!-- /discount box -->
-            <div class="each_box"> <!-- ボックス2 -->
+            <div class="each_box"> <!-- box3 -->
                 <div class="gradation">
-                    <h3>こんなことも対応できます</h3>
+                    <h3>We can even do..</h3>
                 </div>
                 <div class="outline">
-                    <h3>写真・動画の撮影</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                    <h3>ライティングを任せる</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                    <h3>自分で更新できるHP</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
-                    <h3>ツールのデザイン制作</h3>
-                    <div class="lineArrow"></div> <!-- 下線 矢印 !-->
+                    <h3>Shoot photo/video</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
+                    <h3>Ask writing</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
+                    <h3>Renew HP on your own</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
+                    <h3>Design tools</h3>
+                    <div class="lineArrow"></div> <!-- under narrow -->
                     <br><br>
                 </div> <!-- /outline -->
             </div> <!-- /discount box -->
@@ -138,41 +137,33 @@
     </div> <!-- /service table -->
 
     <!--------------------------
-         サービスセクション2
+        Service Section 2
     --------------------------->
     <div id="arrows_section">
-        <h3>導入の流れ</h3>
+        <h3>Flow</h3>
         <div class="container">
           <div class="arrow-steps clearfix">
-            <div class="step" style="background-color:#008FD3; border-left-color:#008FD3"> <h4>01 お問い合わせ</h4> </div>
-            <div class="step" style="background-color:#008FD3; border-left-color:#008FD3"> <h4>02 ご訪問〜ご契約</h4> </div>
-            <div class="step" style="background-color:#008FD3; border-left-color:#008FD3"> <h4>03 各種ご提案〜実施</h4> </div>
+            <div class="step" style="background-color:#008FD3; border-left-color:#008FD3"> <h4>01 Contact Us</h4> </div>
+            <div class="step" style="background-color:#008FD3; border-left-color:#008FD3"> <h4>02 Agreement</h4> </div>
+            <div class="step" style="background-color:#008FD3; border-left-color:#008FD3"> <h4>03 Conduct</h4> </div>
           </div> <!-- /arrow-steps clearfix -->
           <div class="description-steps clearfix">
             <div class="description-box">
-                <h4>テレビ会議の日時をご設定。
-                    「どのような事をしたいか」等、
-                    お話しを伺わせてください。
-                    当社サービスをご紹介させて
-                    いただきます。
+                <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur deleniti temporibus maxime omnis sunt vitae numquam
                 </h4>
             </div> <!--/description-box -->
             <div class="description-box">
                 <h4>
-                    ご訪問の日時をご設定。
-                    御社へお伺いし、サービスの
-                    詳しいご説明をさせて頂きます。
-                    サービスにご満足頂けましたら、
-                    実際のご契約となります。
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur deleniti temporibus maxime omnis sunt vitae numquam
                 </h4>
             </div> <!--/description-box -->
             <div class="description-box">
                 <h4>
-                    顧問サポート開始となります。
-                    お伺いしたお悩みや社内状況を
-                    元に、必要となる内容をご提案
-                    ・お見積りさせて頂き、実施の
-                    開始となります。
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur deleniti temporibus maxime omnis sunt vitae numquam
                 </h4>
             </div> <!--description-box-->
           </div> <!--/arrow-steps clearfix -->
@@ -180,23 +171,23 @@
     </div> <!--/arrows_section-->
 
     <!--------------------------
-            JS セクション
+            JS section
     --------------------------->
      <div id="geometry_particlesjs" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('{{ asset('build/images/js_effect_background.6695e58d.jpg') }}')">
         <div id="campaign_box">
-            <h3>導入キャンペーン</h3>
+            <h3>Campaign</h3>
             <div id="flex_contents">
-                <h1>0円</h1>
+                <h1>$0</h1>
                 <h2>
-                まずはお試し！３つの特典 <br>
-                今だけ無料で対応！契約期間の縛りなし！
+                Bla bla bla bla <br>
+                bla bla bla bla bla bla bla bla
                 </h2>
             </div> <!--flex_contents -->
 
             <div id="Tokuten">
-                <h3>特典1: ホームページ制作：初期導入の費用 ( 20万円分 )</h3>
-                <h3>特典2: 月額基本費用：最初の２ヶ月間が無料 ( 2万円分 )</h3>
-                <h3>特典3: ウェブメール設置が無料：１メールアドレス ( 2万円分 )</h3>
+                <h3>1: bla bla bla bla bla bla </h3>
+                <h3>2: bla bla bla bla bla bla bla </h3>
+                <h3>3: bla bla bla bla bla </h3>
             </div> <!--/Tokuten -->
         </div> <!-- hire_box -->
      </div>
@@ -204,41 +195,40 @@
     <br><br><br><br>
 
     <!--------------------------
-         よくある質問セクション
+         Question section
     --------------------------->
-    <!-- 参照: https://copypet.jp/963/ -->
+    <!-- reference: https://copypet.jp/963/ -->
     <div id="Question_Section">
         <div class="cp_qa">
             <div class="cp_actab">
                 <input id="cp_tabfour021" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour021">ホームページを制作したいのですが、顧問契約は必須でしょうか？</label>
+                <label for="cp_tabfour021">YYYYYYYYYYYYYYYY ？</label>
                 <div class="cp_actab-content">
-                    はい、必要です。
-                    IT顧問サービスの既存ソリューションを活用することで、初期の導入コストを抑えたホームページ制作を実現します。
-                    また、制作後のサーバー保守・運用もIT顧問サービスのサポートに含まれるため安心です。
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur deleniti temporibus maxime omnis sunt vitae numquam provident deserunt alias praesentium rerum laborum,
+                    animi totam magni perferendis reprehenderit velit, repellat laboriosam!
                 </div>
             </div>
             <div class="cp_actab">
                 <input id="cp_tabfour022" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
-                <label for="cp_tabfour022">最初の相談から料金は発生しますか？</label>
+                <label for="cp_tabfour022">TTTTTTTTTTTTTT ？</label>
                 <div class="cp_actab-content">
-                    ホームページの制作開始までは料金は一切かかりません。
-                    まずはお気軽に、お電話やTV会議で制作イメージや課題をお聞かせください。
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur deleniti temporibus maxime omnis sunt vitae numquam provident deserunt alias praesentium rerum laborum,
+
                 </div>
             </div>
             <div class="cp_actab">
                 <input id="cp_tabfour023" type="checkbox" name="tabs">
                 <div class="cp_plus">+</div>
                 <label for="cp_tabfour023">
-                    内容や文章、写真・映像などの素材はこちらで用意するのでしょうか？
+                    MMMMMMMMMMMMMMMMMMM ？
                 </label>
                 <div class="cp_actab-content">
-                    お客様よりイメージ・内容をお伺いした後に、当方で設計書類を制作しお渡しします。
-                    お客様が該当箇所に文章をご記入頂く方法で進めさせて頂きます。
-                    写真・映像はご準備ください。便利なライセンスフリーの無料サイトや、安い価格の素材サイトをご案内させて頂きます。
-                    ライティング代行、撮影や編集、ロゴのデザイン制作なども別途承ります。
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur deleniti temporibus maxime omnis sunt vitae numquam provident deserunt alias praesentium rerum laborum,
                 </div>
             </div>
         </div>
@@ -248,7 +238,7 @@
          Footer
 -------------------------->
 <footer>
-    <p><a href="https://homepage-seisaku.net/?gclid=Cj0KCQjw_7KXBhCoARIsAPdPTfgT3WQi35P99PGB8hvu81nTPhbe7k-1sFqUy-N2KVNqhA3a7Srka1waAmC4EALw_wcB">デザインの参考サイト</a></p>
+    <p><a href="https://homepage-seisaku.net/?gclid=Cj0KCQjw_7KXBhCoARIsAPdPTfgT3WQi35P99PGB8hvu81nTPhbe7k-1sFqUy-N2KVNqhA3a7Srka1waAmC4EALw_wcB">Reference for Design</a></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#0099ff" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,202.7C672,171,768,85,864,85.3C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </footer>

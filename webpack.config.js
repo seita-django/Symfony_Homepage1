@@ -21,12 +21,12 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
 
-    /* jsファイルをpublicに追加  */
+    /* add js file into public */
     .addEntry('javascript/app', './assets/app.js')
     .addEntry('javascript/particles.min', './assets/javascript/particles.min.js')
     .addEntry('javascript/geometry_effect', './assets/javascript/geometry_effect.js')
 
-    /* cssファイルをpublicに追加 */
+    /* add css file into public */
     .addStyleEntry('styles/app', ['./assets/styles/app.css'])  // => public, assets
     .addStyleEntry('styles/effect', ['./assets/styles/effect.css'])
 

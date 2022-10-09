@@ -10,26 +10,26 @@
 <head>
     <title>Simple web Development Template</title>
 </head>
-<!-- メインページ !-->
+<!-- contact page -->
 <body>
 
-    <!-- 大見出し 画面 !-->
+    <!-- Header-->
     <div class="curved">
-        <!-- 会社ロゴ !-->
+        <!-- company logo -->
         <div class="logo">
             　<img src="{{ asset('build/images/会社ロゴ.7f38bf22.jpg') }}" alt="Error">
             <h2>AKIRAM</h2>
         </div>
-        <!-- バーセクション !-->
+        <!-- Bar section -->
         <div class="list-menu">
             　<ul class="list">
-            　　<li><a href="{{ path('app_default') }}">ホームへ戻る</a></li>
+            　　<li><a href="{{ path('app_default') }}">Back to main page</a></li>
             　</ul>
         </div>
 
         <br><br>
-        <!-- 見出し !-->
-        <!-- bootstrapを使用 !-->
+        <!-- Header 2 -->
+        <!-- Memo: using bootstrap -->
         <div class="container">
            <div class="row">
                <div class="col-sm-4">
@@ -41,16 +41,12 @@
         </div>
 
     <br><br>
-    <!-- 曲線 (曲線の生成にはGetWavesを使用 => https://getwaves.io/) !-->
+    <!-- curve (reference => https://getwaves.io/) !-->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#ffffff" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,202.7C672,171,768,85,864,85.3C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-
-    <!-- (Memo: 白色でfillすることによって背景の色が浮き出る仕様)!-->
-
 </div>
 
-
-<!-- フッター !-->
+<!-- footer -->
 
 <footer></footer>
 </body>
